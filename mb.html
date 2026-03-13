@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>MB</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="title">MB</div>
+
+<div class="content">
+
+<!-- Video Row -->
+<div class="video-row">
+
+<video width="200" controls onclick="openVideo('sdpa.mp4')">
+    <source src="sdpa.mp4" type="video/mp4">
+</video>
+
+<video width="200" controls onclick="openVideo('mbb.mp4')">
+    <source src="mbb.mp4" type="video/mp4">
+</video>
+
+<video width="200" controls onclick="openVideo('mbb.mp4')">
+    <source src="mb1.mp4" type="video/mp4">
+</video>
+
+<video width="200" controls onclick="openVideo('mbb.mp4')">
+    <source src="mb2.mp4" type="video/mp4">
+</video>
+
+<video width="200" controls onclick="openVideo('mbb.mp4')">
+    <source src="mb3.mp4" type="video/mp4">
+</video>
+
+<video width="200" controls onclick="openVideo('mbb.mp4')">
+    <source src="mb4.mp4" type="video/mp4">
+</video>
+
+<video width="200" controls onclick="openVideo('mbb.mp4')">
+    <source src="mb5.mp4" type="video/mp4">
+</video>
+
+<video width="200" controls onclick="openVideo('mbb.mp4')">
+    <source src="mb6.mp4" type="video/mp4">
+</video>
+
+<video width="200" controls onclick="openVideo('mbb.mp4')">
+    <source src="mb7.mp4" type="video/mp4">
+</video>
+
+<video width="200" controls onclick="openVideo('mbb.mp4')">
+    <source src="mb8.mp4" type="video/mp4">
+</video>
+
+<video width="200" controls onclick="openVideo('mbb.mp4')">
+    <source src="mb9.mp4" type="video/mp4">
+</video>
+
+<video width="200" controls onclick="openVideo('mbb.mp4')">
+    <source src="mb10.mp4" type="video/mp4">
+</video>
+
+<video width="200" controls onclick="openVideo('mbb.mp4')">
+    <source src="mb11.mp4" type="video/mp4">
+</video>
+
+<video width="200" controls onclick="openVideo('mbb.mp4')">
+    <source src="mb12.mp4" type="video/mp4">
+</video>
+
+<video width="200" controls onclick="openVideo('mbb.mp4')">
+    <source src="mb13.mp4" type="video/mp4">
+</video>
+
+<video width="200" controls onclick="openVideo('mbb.mp4')">
+    <source src="mb14.mp4" type="video/mp4">
+</video>
+
+
+</div>
+
+<br><br>
+
+<!-- Video Modal -->
+<div id="videoModal" class="video-modal">
+
+<span class="close" onclick="closeVideo()">✖</span>
+
+<video id="bigVideo" controls>
+    <source id="videoSource" src="" type="video/mp4">
+</video>
+
+</div>
+
+<br><br>
+
+<a class="back-home" href="index.html">Back Home</a>
+
+<div class="navbox">
+<a href="mb.html">MB - Videos</a>
+<a href="sdp.html">SDP - Pictures</a>
+<a href="mnames.html">Member Names</a>
+</div>
+
+</div>
+
+<script>
+
+function openVideo(videoFile){
+const modal = document.getElementById("videoModal");
+const video = document.getElementById("bigVideo");
+const source = document.getElementById("videoSource");
+
+source.src = videoFile;
+video.load();
+
+modal.style.display = "flex";
+}
+
+function closeVideo(){
+const modal = document.getElementById("videoModal");
+const video = document.getElementById("bigVideo");
+
+video.pause();
+video.currentTime = 0;
+
+modal.style.display = "none";
+}
+
+</script>
+
+</body>
+</html>

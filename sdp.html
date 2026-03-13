@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SDP</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="title">SDP</div>
+
+<div class="content">
+
+<div class="gallery">
+
+<img src="4.png" onclick="openImg(this.src)">
+<img src="5.png" onclick="openImg(this.src)">
+<img src="6.png" onclick="openImg(this.src)">
+<img src="7.png" onclick="openImg(this.src)">
+<img src="10.png" onclick="openImg(this.src)">
+<img src="11.png" onclick="openImg(this.src)">
+<img src="12.png" onclick="openImg(this.src)">
+<img src="13.png" onclick="openImg(this.src)">
+<img src="16.png" onclick="openImg(this.src)">
+<img src="a.png" onclick="openImg(this.src)">
+<img src="b.png" onclick="openImg(this.src)">
+<img src="c.png" onclick="openImg(this.src)">
+<img src="d.png" onclick="openImg(this.src)">
+<img src="e.png" onclick="openImg(this.src)">
+<img src="f.png" onclick="openImg(this.src)">
+<img src="g.png" onclick="openImg(this.src)">
+<img src="GABINAYOT .png" onclick="openImg(this.src)">
+<img src="sss.png" onclick="openImg(this.src)">
+
+</div>
+
+<!-- Image Viewer -->
+<div id="imgBox" class="img-box">
+
+<span class="close" onclick="closeImg()">✖</span>
+
+<img id="bigImg">
+
+<br>
+
+<a id="downloadBtn" download>
+<button class="save-btn">Save Image</button>
+</a>
+
+</div>
+
+<br>
+<a class="back-home" href="index.html">Back Home</a>
+<br>
+<span class="role">Editor : Riko Yan</span>
+
+<div class="navbox">
+<a href="mb.html">MB - Videos</a>
+<a href="sdp.html">SDP - Pictures</a>
+<a href="mnames.html">Member Names</a>
+</div>
+
+<script>
+
+let imgBox = document.getElementById("imgBox");
+let bigImg = document.getElementById("bigImg");
+let downloadBtn = document.getElementById("downloadBtn");
+
+function openImg(pic){
+    imgBox.style.display = "flex";
+    bigImg.src = pic;
+    downloadBtn.href = pic;
+}
+
+function closeImg(){
+    imgBox.style.display = "none";
+}
+
+</script>
+
+</div>
+
+</body>
+</html>
